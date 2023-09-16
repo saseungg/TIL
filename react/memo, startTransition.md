@@ -1,6 +1,6 @@
 # memo, startTransition
 
-## 📌 memo
+# 📌 memo
 
 props가 이전값과 동일하지 않을 경우에만 리렌더링 한다.
 
@@ -121,7 +121,7 @@ function arePropsEqual(oldProps, newProps) {
 
 - 비효율적이라 실제로 잘 사용하지는 않을 것 같음
 
-## 📌 startTransition
+# 📌 startTransition
 
 UI를 차단하지 않고 state를 업데이트 할 수 있다.
 

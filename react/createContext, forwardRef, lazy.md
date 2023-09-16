@@ -1,5 +1,5 @@
 # createContext, forwardRef, lazy
-## createContext
+# 📌 createContext
 
 useContext를 사용할 때 provider가 없을 경우 가져다 쓰는 기본 컨텍스트 값
 
@@ -11,7 +11,7 @@ defaultValue는 상위 트리에 일치하는 **provider가 없는 경우**에 �
 
 `useContext` 이전에는 `SomeContext.Consumer` 라는 것을 사용해서 컨텍스트를 읽었음
 
-### Consumer
+### 🌟 Consumer
 
 ```jsx
 
@@ -31,7 +31,7 @@ function MyComponent() {
 
 context 값을 인자로 받아서 넣어줘야한다.
 
-### useContext
+### 🌟 useContext
 
 ```jsx
 function MyComponent() {
@@ -48,7 +48,7 @@ function MyComponent() {
 
 useContext는 변수에 context값을 담아서 사용할 수 있음. 훨씬 간편해짐
 
-## 컨텍스트 import, export
+## 🌟 컨텍스트 import, export
 
 다른 파일에 있는 컴포넌트가 동일한 컨텍스트에 엑세스해야할 경우가 종종 있기 때문에 컨텍스트를 별도의 파일에 선언하는 것이 일반적이다.
 
@@ -62,7 +62,7 @@ export const AuthContext = createContext(null);
 
 ---
 
-## forwardRef
+# 📌 forwardRef
 
 부모 컴포넌트가 자식 컴포넌트에 ref를 전달하고 싶을 때 사용
 
@@ -96,11 +96,11 @@ const MyInput = (props, ref) => {
 export default forwardRef(MyInput);
 ```
 
-## lazy
+# 📌 lazy
 
 해당 메서드를 사용하면 동적 가져오기를 사용해서 구성 요소 수준에서 React  애플리케이션을 쉽게 코드 분할 할 수 있다.
 
-### Suspense와 활용
+### 🌟 Suspense와 활용
 
 ```jsx
 import React, { lazy, Suspense } from 'react';
